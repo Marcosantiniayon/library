@@ -1,0 +1,89 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+
+    .header{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* background-color: rgb(255, 255, 255); */
+        background-color: rgb(34, 84, 84);
+
+    }
+        h1{
+            /* color: rgb(143, 132, 68); */
+            color: white;
+        }
+      .accountOptions{
+      }
+
+    .main {
+        padding: 20px;
+        /* background-color: rgb(34, 84, 84); */
+        background-color: rgb(255, 255, 255);
+
+
+        flex: 1 0 auto;
+    }
+
+        button{
+            /* background-color: rgb(151, 94, 119); */
+            background-color: rgb(89, 46, 63);
+
+
+            color: white;
+            padding: 8px;
+            border-radius: 12px;
+            /* border: 2px solid rgb(183, 130, 152); */
+            border: none;
+        }
+        button:hover {
+            /* background-color: rgb(84, 44, 61); */
+            background-color: rgb(183, 130, 152);
+
+        }
+
+        #booksGrid{
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));  
+            gap: 20px;
+        }
+           .bookCard{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            background-color: rgb(108, 102, 69);
+            /* border: 2px solid; */
+            /* border-color: red; */
+            color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+           }   
+            #readBtn, #deleteBtn {
+                margin: 8px;
+            }
+
+  
+    footer {
+        flex-shrink: 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Color Palettes */
+    /*  
+    background-color:rgb(14, 66, 66), rgb(25, 95, 95), rgb(41, 123, 123);
+    ---> background-color: rgb(14, 66, 66), rgb(66, 58, 14), rgb(66, 14, 37);
+    background-color: rgb(14, 66, 66), rgb(66, 14, 66), rgb(66, 66, 14); 
+    */
