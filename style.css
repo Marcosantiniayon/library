@@ -30,8 +30,6 @@ html, body {
         padding: 20px;
         /* background-color: rgb(34, 84, 84); */
         background-color: rgb(255, 255, 255);
-
-
         flex: 1 0 auto;
     }
 
@@ -71,14 +69,39 @@ html, body {
             #readBtn, #deleteBtn {
                 margin: 8px;
             }
+    #modal {
+        width: 100%;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        bottom: 200px;
+        left: 0;
+        right: 0;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+        #inputForm{
+            display: flex;
+            flex-direction: column;
+            gap:8px;
+            width: 300px;
+            padding: 20px;
+            align-items: center;
+            color: rgb(108, 102, 69);
+            background-color: rgb(233, 233, 233);
+        }
+        h2{
+            margin:12px;
+        }
 
-  
     footer {
         flex-shrink: 0;
         position: fixed;
         bottom: 0;
         width: 100%;
         padding: 20px;
+        color: rgb(34, 84, 84);
     }
 
     /* Color Palettes */

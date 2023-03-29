@@ -15,8 +15,19 @@
         </div>
     </div>
     <div class="main">
-        <button id="addNewBook">Add A Book</button>
+        <button id="addABook">Add A Book</button>
         <div id="booksGrid"></div>
+    </div>
+    <div class="innactive-modal" id="modal">
+        <form id="inputForm">
+            <h2>New Book</h2>
+            <input type="text" id="bookTitleInput" placeholder="Title">
+            <input type="text" id="bookAuthorInput" placeholder="Author">
+            <input type="number" id="bookPagesInput" placeholder="Pages">
+            <label for="readInput"> Have you read this book? </label>
+            <input type="checkbox" name="readInput" id="readInput">
+            <button id="submitBtn"> Submit </button>
+        </form>
     </div>
     <footer> Marco Santini © 2023 </footer>
 

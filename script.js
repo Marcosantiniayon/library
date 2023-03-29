@@ -1,9 +1,17 @@
-const addNewBook = document.getElementById('addNewBook');
+const addABook = document.getElementById('addABook');
+const modal = document.getElementById('modal');
+// const inputForm = document.getElementById('inputForm');
+const bookTitleInput = document.getElementById('bookTitleInput');
+const bookAuthorInput = document.getElementById('bookAuthorInput');
+const bookPagesInput = document.getElementById('bookPagesInput');
+const bookReadInput = document.getElementById('bookReadInput');
+
+const addNewBook = document.getElementById('submitBtn');
 const booksGrid = document.getElementById('booksGrid');
-const titleInput = 'title PH';
-const authorInput = 'author PH';
-const pagesInput = 'pages PH';
-const readInput = 'Not yet read PH';
+const titleOutput = 'title PH';
+const authorOutput = 'author PH';
+const pagesOutput = 'pages PH';
+const readOutput = 'Not yet read PH';
 
 const myLibrary = [];
 
@@ -22,19 +30,24 @@ function addBookToLibrary() {
   // do stuff here
 }
 
+addABook.addEventListener('click', () => {
+  modal.style.display = "flex";
+});
+
 addNewBook.addEventListener('click', () => {
+  // modal.style.display = "none";
   const newBookCard = document.createElement('div');
   newBookCard.className = 'bookCard';
 
   const title = document.createElement('p');
-  title.innerHTML = titleInput;
+  title.innerHTML = titleOutput;
   const author = document.createElement('p');
-  author.innerHTML = authorInput;
+  author.innerHTML = authorOutput;
   const pages = document.createElement('p');
-  pages.innerHTML = pagesInput;
+  pages.innerHTML = pagesOutput;
   const readBtn = document.createElement('button');
-  readBtn.innerHTML = readInput;
-  readBtn.id = 'readBtn';
+  readBtn.innerHTML = readOutput;
+  readBtn.id = "readBtn";
   const deleteBtn = document.createElement('button');
   deleteBtn.innerHTML = 'delete';
   deleteBtn.id = 'deleteBtn';
